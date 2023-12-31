@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-base: 36, 39, 58;
+    --color-base-active: 54, 58, 87;
+
+    --color-mantle: 30, 32, 48;
+    --color-crust: 24, 25, 38;
+
+    --color-surface0: 54, 58, 79;
+    --color-surface0-active: 85, 91, 124; /* brightness +20% */
+    --color-surface1: 73, 77, 100;
+    --color-surface2: 91, 96, 120;
+
+    --color-overlay0: 110, 115, 141;
+    --color-overlay1: 128, 135, 162;
+    --color-overlay2: 147, 154, 183;
+
+    --color-text: 202, 211, 245;
+    --color-subtext0: 165, 173, 203;
+    --color-subtext1: 184, 192, 224;
+
+    --color-lavender: 183, 189, 248;
+    --color-lavender-active: 197, 202, 249; /* brightness +20% */
+
+    --color-blue: 138, 173, 244;
+    --color-blue-active: 161, 189, 246; /* brightness +20% */
+
+    --color-sapphire: 125, 196, 228;
+    --color-sapphire-active: 151, 208, 233; /* brightness +20% */
+
+    --color-sky: 145, 215, 227;
+    --color-sky-active: 167, 223, 233; /* brightness +20% */
+
+    --color-teal: 139, 213, 202;
+    --color-teal-active: 162, 221, 213; /* brightness +20% */
+
+    --color-green: 166, 218, 149;
+    --color-green-active: 184, 225, 170; /* brightness +20% */
+
+    --color-yellow: 238, 212, 159;
+    --color-yellow-active: 241, 221, 178; /* brightness +20% */
+
+    --color-peach: 245, 169, 127;
+    --color-peach-active: 247, 186, 153; /* brightness +20% */
+
+    --color-maroon: 238, 153, 160;
+    --color-maroon-active: 241, 173, 179; /* brightness +20% */
+
+    --color-red: 237, 135, 150;
+    --color-red-active: 241, 159, 171; /* brightness +20% */
+
+    --color-mauve: 198, 160, 246;
+    --color-mauve-active: 209, 179, 248; /* brightness +20% */
+
+    --color-pink: 245, 189, 230;
+    --color-pink-active: 247, 202, 235; /* brightness +20% */
+
+    --color-flamingo: 240, 198, 198;
+    --color-flamingo-active: 243, 209, 209; /* brightness +20% */
+
+    --color-rosewater: 244, 219, 214;
+    --color-rosewater-active: 246, 226, 222; /* brightness +20% */
+
+    --font-scale: 1.125;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* Hide scrollbar */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* Hide scrollbar. Chrome, Opera, Safari */
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+  html {
+    font-family: JetBrainsMono;
+    font-size: calc(16px * var(--font-scale));
+    user-select: none;
+  }
+
+  button {
+    all: unset;
+    cursor: default;
+  }
+
+  input {
+    all: unset;
+  }
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("../shared/ui/assets/fonts/JetBrainsMono-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("../shared/ui/assets/fonts/JetBrainsMono-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("../shared/ui/assets/fonts/JetBrainsMono-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("../shared/ui/assets/fonts/JetBrainsMono-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("../shared/ui/assets/fonts/JetBrainsMono-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("../shared/ui/assets/fonts/JetBrainsMono-ExtraBold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
